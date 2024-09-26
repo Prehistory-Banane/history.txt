@@ -1,0 +1,8 @@
+  240  wget https://gist.githubusercontent.com/bhubr/bc3a21a0202109beeb31c4a677e0461b/raw/d8805eb82e8aabffab3b0163596c734f376617d0/wilders.csv
+  241  grep "France,2019,PHP" < wilders.csv | wc -l > php_france_2019.csv
+  242  grep JavaScript < wilders.csv > javascript.csv
+  243  grep Biarritz < javascript.csv > biarritz_javascript.csv
+  244  grep Toulouse < javascript.csv > toujouse_javascript.csv
+  245  cat biarritz_javascript.csv toujouse_javascript.csv > javascript_biarritz_toulouse.csv
+  246  head javascript_biarritz_toulouse.csv 
+  247  history | tail -n8 > history.txt
